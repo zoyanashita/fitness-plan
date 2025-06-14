@@ -7,6 +7,7 @@
     font-display: swap;
 
 }
+
 @font-face {
     font-family: 'Melete';
     src: url('fonts/melete-light-webfont.woff2') format('woff2'),
@@ -16,6 +17,7 @@
     font-display: swap;
 
 }
+
 @font-face {
     font-family: 'Melete';
     src: url('fonts/melete-medium-webfont.woff2') format('woff2'),
@@ -24,6 +26,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Melete';
     src: url('fonts/melete-regular-webfont.woff2') format('woff2'),
@@ -33,6 +36,7 @@
     font-display: swap;
 
 }
+
 @font-face {
     font-family: 'FA-1';
     src: url('fonts/fa-1-regular-webfont.woff2') format('woff2'),
@@ -45,6 +49,37 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding: 0.75rem 1rem;
+    background-color: rgb(55, 181, 195);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    font-family: 'FA-1';
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(207, 230, 230);
+}
+
+body {
     background-color: rgb(15, 29, 32);
 }
 
@@ -72,16 +107,6 @@ h3 {
     color: aliceblue;
 }
 
-.sidebar {
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-
-    width: 200px;
-    padding: 1rem;
-    
-}
-
 .sidebar nav ul li a {
     text-decoration: none;
     display: block;
@@ -91,7 +116,7 @@ h3 {
 
 .main {
     flex: 1;
-    padding: 1.5rem;
+    padding: 5rem 1.5rem 1.5rem;
 }
 
 @media (max-width:100px) {
