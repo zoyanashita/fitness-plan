@@ -4,31 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoya & Abs Fitness Tracker</title>
-    <style>
-        html{
-            scroll-behavior: smooth;
-        }
-        .layout{
-            display:flex;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .sidebar {
-            position: sticky;
-            top: 0;
-            align-self: flex-start;
-            
-            width: 200px;
-            padding: 1rem;
-        }
-        .main {
-            flex:1;
-            padding: 1.5rem;
-        }
-        @media (max-width:100px) {
-            .layout { flex-direction: column;}
-            .sidebar {width: 100%}
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="layout">
@@ -54,7 +30,7 @@
         </ul>
 
         <h2 id="breakdown">Target Breakdown</h2>
-        <table border="1">
+        <table border="1" style="margin: 0 auto;">
             <thread>
                 <tr>
                     <th>Name:</th>

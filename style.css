@@ -1,15 +1,92 @@
-.layout{
-    display:flex;
+@font-face {
+    font-family: 'Melete';
+    src: url('fonts/melete-bold-webfont.woff2') format('woff2'),
+        url('fonts/melete-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+
 }
+@font-face {
+    font-family: 'Melete';
+    src: url('fonts/melete-light-webfont.woff2') format('woff2'),
+        url('fonts/melete-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+
+}
+@font-face {
+    font-family: 'Melete';
+    src: url('fonts/melete-medium-webfont.woff2') format('woff2'),
+        url('fonts/melete-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Melete';
+    src: url('fonts/melete-regular-webfont.woff2') format('woff2'),
+        url('fonts/melete-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+
+}
+@font-face {
+    font-family: 'FA-1';
+    src: url('fonts/fa-1-regular-webfont.woff2') format('woff2'),
+        url('fonts/fa-1-regular-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+    font-size: 200;
+    font-family: 'Melete', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Melete', sans-serif;
+}
+
+h3 {
+    font-family: 'FA-1', sans-serif;
+}
+
+.layout {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .sidebar {
-    width: 240px;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+
+    width: 200px;
     padding: 1rem;
 }
+
 .main {
-    flex:1;
+    flex: 1;
     padding: 1.5rem;
 }
+
 @media (max-width:100px) {
-    .layout { flex-direction: column;}
-    .sidebar {width: 100%}
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%
+    }
 }
