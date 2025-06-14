@@ -52,6 +52,39 @@ html {
     scroll-padding-top: 6rem;
 }
 
+
+/* 1) Reset the list so no bullets or extra padding/margin */
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2) Make the <ul> a flex row */
+header nav ul {
+  display: -webkit-box;      /* older Safari */
+  display: -ms-flexbox;      /* IE10 */
+  display: flex;             /* modern browsers */
+  align-items: center;       /* vertically center items */
+  gap: 1rem;                 /* space between links */
+}
+
+/* 4) Style the links */
+header nav ul li a {
+  display: block;            /* makes the entire area clickable */
+  padding: 0.5rem 0;         /* give some vertical breathing room */
+  color: rgb(207, 230, 230);           /* or whatever your nav text color is */
+  text-decoration: none;
+  font-family: 'FA-1';
+}
+
+/* 5) Hover/focus states */
+header nav ul li a:hover,
+header nav ul li a:focus {
+  text-decoration: underline;
+}
+
+
 header {
     position: fixed;
     top: 0;
@@ -61,22 +94,6 @@ header {
     background-color: rgb(55, 181, 195);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 100;
-}
-
-header nav ul {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav a {
-    font-family: 'FA-1';
-    text-decoration: none;
-    font-weight: bold;
-    text-align: left;
-    color: rgb(207, 230, 230);
 }
 
 body {
