@@ -1,0 +1,15 @@
+.layout{
+    display:flex;
+}
+.sidebar {
+    width: 240px;
+    padding: 1rem;
+}
+.main {
+    flex:1;
+    padding: 1.5rem;
+}
+@media (max-width:100px) {
+    .layout { flex-direction: column;}
+    .sidebar {width: 100%}
+}
